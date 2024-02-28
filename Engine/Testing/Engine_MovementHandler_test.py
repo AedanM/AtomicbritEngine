@@ -1,6 +1,6 @@
 """Test Module for Movement Handler"""
 
-from Engine import MovementHandler, SpriteObjects
+from AtomicbritEngine.Engine import MovementHandler, SpriteObjects
 
 
 def test_ListedMotion() -> None:

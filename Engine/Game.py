@@ -4,7 +4,7 @@ from typing import Any
 
 import pygame
 
-from Engine import Clock, Color, LightingEngine, SaveHandler
+from AtomicbritEngine.Engine import Clock, Color, LightingEngine, SaveHandler
 
 
 class Game:

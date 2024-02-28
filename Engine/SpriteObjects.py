@@ -4,7 +4,7 @@ from typing import Any
 
 import pygame
 
-from Engine import Color, Game, MovementHandler, Utils
+from AtomicbritEngine.Engine import Color, Game, MovementHandler, Utils
 
 
 class GameObject(pygame.sprite.Sprite):

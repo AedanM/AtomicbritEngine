@@ -1,6 +1,6 @@
 """Handler for Sprite Movement Tasks"""
 
-from Engine import Utils
+from AtomicbritEngine.Engine import Utils
 
 
 class MovementSpeeds:

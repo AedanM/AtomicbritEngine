@@ -1,7 +1,7 @@
 """Test Module for Game Functions"""
 
 # pylint: disable=invalid-name
-from Engine import Game
+from AtomicbritEngine.Engine import Game
 
 
 def test_ScreenSize() -> None:

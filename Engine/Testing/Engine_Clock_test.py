@@ -4,8 +4,8 @@ import time
 
 import pygame
 
-from Engine import Clock, Utils
-from Engine.Testing.TestClass import TestClass
+from AtomicbritEngine.Engine import Clock, Utils
+from AtomicbritEngine.Engine.Testing.TestClass import TestClass
 
 
 def RunClockForRealTime(clock, lenInSeconds, clockMul=1.0) -> tuple[int, int]:
