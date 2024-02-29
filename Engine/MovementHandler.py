@@ -6,10 +6,10 @@ from AtomicbritEngine.Engine import Utils
 class MovementSpeeds:
     """Defined Speeds for Motion"""
 
-    Slow: int = 1
-    Medium: int = 10
-    Fast: int = 100
-    Instant: int = 1000
+    Slow: int = 0
+    Medium: int = 1
+    Fast: int = 5
+    Instant: int = 10
 
 
 class MovementHandler:
@@ -112,7 +112,7 @@ class MovementHandler:
             if self.IsFinished(obj=obj):
                 if self.Dest == self.PointsList[len(self.PointsList) - 1] and not self.PointsList:
                     self.FinishMovement()
-                elif self.PointsList and self.CurrentPointIdx+1 == len(self.PointsList):
+                elif self.PointsList and self.CurrentPointIdx + 1 == len(self.PointsList):
                     self.FinishMovement()
                 else:
                     self.CurrentPointIdx += 1

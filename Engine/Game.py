@@ -1,5 +1,6 @@
 """Base class for pygame engine"""
 
+import copy
 from typing import Any
 
 import pygame
@@ -41,10 +42,10 @@ class Game:
     def UpdateSprites(self) -> None:
         """Update each sprite each frame"""
         for group in self.SpriteGroups:
-            group.update()
             for sprite in group:
                 sprite.UpdateSprite(activeGame=self)
-            group.draw(self.Screen)
+            tempGroup = copy.deepcopy(group)
+            tempGroup.draw(self.Screen)
 
     def UpdateLightingEngine(self) -> None:
         self.Lighting.LightingEngine(activeGame=self, dayTransition=False)
